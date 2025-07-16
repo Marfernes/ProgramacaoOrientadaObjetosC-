@@ -4,8 +4,17 @@ public class Musica
     public string nome { get; set; }
     public string artista { get; set; }
     public int duracao { get; set; }
-    public bool disponivel { get; set; }
+    private bool disponivel { get; set; }
 
+    public void EscrevaDisponivel(bool value)
+    {
+        disponivel = value;
+    }
+
+    public bool LeiaDisponivel()
+    {
+        return disponivel;
+    }
     public void ExibirFichaTecnica()
     {
 
