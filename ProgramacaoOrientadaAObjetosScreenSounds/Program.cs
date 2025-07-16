@@ -1,18 +1,21 @@
 ﻿
 Musica musica = new Musica();
 
-musica.nome = "Nome dele é Jesus!";
-musica.artista = "Marcelo Nunes";
-musica.duracao = 12;
-musica.EscrevaDisponivel(true);
-Console.WriteLine(musica.LeiaDisponivel());
+musica.Nome = "Nome dele é Jesus!";
+musica.Artista = "Marcelo Nunes";
+musica.Duracao = 12;
+musica.Disponivel = true;
+
+Console.WriteLine(musica.Disponivel);
+Console.WriteLine(musica.DescricaoResumida);
+
 
 Musica musica2 = new Musica();
-musica2.nome = "Nome dele é Jesus 2!";
-musica2.artista = "Marcelo Nunes";
-musica2.duracao = 12;
-musica.EscrevaDisponivel(false);
-Console.WriteLine(musica2.LeiaDisponivel());
+musica2.Nome = "Nome dele é Jesus 2!";
+musica2.Artista = "Marcelo Nunes";
+musica2.Duracao = 12;
+musica.Disponivel = false;
+Console.WriteLine(musica2.Disponivel);
 
 musica.ExibirFichaTecnica();
 musica2.ExibirFichaTecnica();
